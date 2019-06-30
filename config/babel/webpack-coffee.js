@@ -8,6 +8,5 @@ const topCoderBabelConfig = require('topcoder-react-utils/config/babel/webpack')
 
 const envPresetIndex = topCoderBabelConfig.presets.find((preset) => preset === 'env')
 topCoderBabelConfig.presets.splice(envPresetIndex, 1, ['env', { modules: false }])
-const a = 0
 
 module.exports = topCoderBabelConfig
